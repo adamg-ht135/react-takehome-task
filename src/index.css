@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.task {
+  display:flex;
+  margin: 0.5em 1em;
+  align-items: center;
+  width: auto;
+  gap: 4px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(243, 243, 243);
+  transition: opacity 0.7s ease-out;
+}
+#due{
+  margin: 0 1.5em;
+}
+#name{
+  max-width: 70%;
+  overflow: hidden;
+}
+
+.tasks{
+  margin: auto;
+  width: 60vw;
+  height: 100vh;
+  padding: 2em;
+}
+
+.create-task{
+  font-family: 'Open Sans', sans-serif; 
+  display: flex;
+  gap: 4px;
+  padding: 5px;
+}
+
+.filters{
+  font-family: 'Open Sans', sans-serif; 
+  display: flex;
+  gap: 4px;
+  padding: 5px;
+}
+
+button{
+  font-family: 'Open Sans', sans-serif;
+  padding: 4px 6px;
+  background-color: lightgray;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+
+button:hover{
+  padding: 4px 6px;
+  background-color: silver;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+.tag1{
+  margin-left: 4px;
+  color: white;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+.tag2{
+  margin-left: 4px;
+  color: white;
+  background-color: orange;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+.tag3{
+  margin-left: 4px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+.task.fade-out {
+  opacity: 0;
+}
+#completed{
+  background-color: rgb(222, 238, 204);
+}
+#grayed{
+  color: rgb(165, 165, 165);
+}
+
+@media only screen and (max-width: 600px) {
+  .tasks{
+    margin: auto;
+    width: 90vw;
+    height: 100vh;
+    padding: 1em;
+  }
+  .create-task{
+    font-family: 'Open Sans', sans-serif; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 2px;
+    height: auto;
+  }
+  
+}
